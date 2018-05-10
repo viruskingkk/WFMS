@@ -1,0 +1,220 @@
+html, body {
+	font-size:15px;
+	width: 100%;
+	height: 100%;
+	background-color: #dcf0ff;
+	color: rgb(0,0,0);
+	line-height:24px;
+	font-family:微軟正黑體,新細明體,Arial;
+}
+body {
+	padding-top: 70px;
+}
+h1,h2,h3{
+	font-weight: normal;
+}
+ul li ul{
+	margin-bottom:2em;
+}
+ul li{
+	line-height:1.65em;
+}
+#main{
+	width:80%;
+	margin:0 auto;
+	background-color: rgba(255,255,255,0.7);
+	padding:2em;
+	letter-spacing:0.2px;
+	border-radius:0.25em;
+}
+#main .content{
+	min-height:350px;
+}
+footer{
+	margin-top:5em;
+	font-size:78%;
+	text-align:right;
+	border-top:3px solid rgb(0, 0, 0);
+	padding-top:1em;
+	clear:both;
+}
+.clearfix {
+	clear: both;
+}
+.avatar,.avatar-md{
+	width:80px;
+}
+.avatar-lg{
+	width:120px;
+}
+.avatar-sm{
+	width:50px;
+}
+.avatar-xs{
+	width:30px;
+}
+.post {
+	background: #fff;
+	border-bottom: #aaa 1px solid;
+	border-radius: 0.25em;
+	padding: 0.5em;
+	margin-bottom: 2em;
+	/*box-shadow:0px 0px 3px rgba(200,200,200,0.5);*/
+}
+.post .con {
+	padding: 0.5em;
+	min-height:3em;
+}
+form .captcha {
+	margin: 0.5em 0;
+	display: block;
+}
+
+
+#notifs-button {
+	background: #fff;
+	color: #000;
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
+	border: #000 1px solid;
+	float: right;
+}
+
+#notifs-button a {
+	color: #000;
+	padding: 0.25em;
+}
+
+#notifs-button span {
+	padding: 0.25em;
+}
+
+#notifs-button span.new {
+	background: #E32D2D;
+	color: #fff;
+}
+
+#notifs {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25vh;
+	min-width:270px;
+	max-width:360px;
+	background: #fff;
+	color: #000;
+	-webkit-border-radius: 0.25em;
+	-moz-border-radius: 0.25em;
+	border-radius: 0.25em;
+	border: #000 1px solid;
+	max-height: 65%;
+	overflow:auto;
+	z-index:3;
+}
+
+#notifs h4 {
+	margin: 0;
+	padding: 0.25em;
+	text-align: center;
+	background: #FFF;
+}
+
+#notifs .notifications {
+	padding: 0.5em;
+	border-top: #ccc 1px solid;
+}
+
+#notifs .notifications:hover {
+	background: rgb(245,245,255);
+}
+#notifs .notifications img.avatar{
+	float:left;
+	margin-right:8px;
+}
+#notifs a {
+	color: #000;
+}
+#notifs .notifications.new {
+	background: rgb(234,234,255);
+}
+
+.form-sm{
+	max-width:600px;
+}
+.form-xs{
+	max-width:400px;
+}
+#loginbox{
+	margin-top:50px;
+}
+#loginbox .form-control{
+	max-width:240px;
+}
+#loginbox .form-group{
+	margin-bottom:20px;
+}
+
+
+#chat .msg-panel{
+	color:#000000;
+	background-color:#ffffff;
+	padding: 0.3em 0.5em 0.3em 0.5em;
+	max-height: 450px;
+	overflow: auto;
+}
+#chat .msg-panel+form{
+	margin-top:1em;
+}
+#chat .msg{
+	padding:0.5em;
+	font-size:106%;
+}
+#chat .msg+.msg{
+	border-top: #eee 1px solid;
+}
+#chat .msg .chat-author{
+	color: #B0B;
+	font-weight: bold;
+	margin-right:1em;
+}
+#chat .msg .chat-mktime{
+	text-align:right;
+	float: right;
+}
+
+
+/*覆蓋BS 3的CSS 開始*/
+.page-header{
+	margin-top:0;
+}
+/*覆蓋BS 3的CSS 結束*/
+
+@media screen and (max-width:768px){
+	body {
+		padding-top: 50px;
+	}
+	footer{
+		margin-top:1em;
+		padding-top:1em;
+		clear:both;
+	}
+	#main{
+		width:100%;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		box-sizing:border-box;
+		border-radius:0;
+		padding:1em;
+	}
+	#main .content{
+		min-height:calc(100vh - 50px - 6em);
+	}
+	#chat .msg-panel{
+		max-height: 50vh;
+	}
+	.avatar{
+		width:40px;
+	}
+}
